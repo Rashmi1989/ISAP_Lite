@@ -1,0 +1,118 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorLoginBG</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">#c5c5c5</item>
+        <!--<item name="colorControlActivated">@color/colorLogin</item>-->
+        <!--<item name="colorControlHighlight">@color/colorLoginBG</item>-->
+    </style>
+    <!-- Splash Screen theme. -->
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+
+    <style name="Select_clientTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="android:windowBackground">@drawable/select_client_screen</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--<item name="android:windowLightStatusBar">true</item>-->
+
+    </style>
+    <style name="login_theme" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="android:windowBackground">@drawable/login_bgimage</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--<item name="android:windowLightStatusBar">true</item>-->
+
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <!--<style name="AppTheme.NoActionBar">-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="windowNoTitle">true</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorLogin</item>
+    </style>
+
+    <style name="TextAppearence.App.TextInputLayout2" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/statusBar_color</item>
+    </style>
+
+    <style name="Widget.Design.TextInputLayout" parent="AppTheme">
+        <item name="hintTextAppearance">@style/AppTheme.TextFloatLabelAppearance</item>
+        <item name="android:textColor">@color/colorLogin</item>
+        <!--<item name="counterTextAppearance">@style/TextAppearance.Design.Counter</item>-->
+        <!--<item name="counterOverflowTextAppearance">@style/TextAppearance.Design.Counter.Overflow</item>-->
+    </style>
+
+    <style name="AppTheme.TextFloatLabelAppearance" parent="TextAppearance.Design.Hint">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@color/colorLogin</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">20sp</item><!-- text size in menu-->
+        <item name="listPreferredItemHeightSmall">73dp</item>
+        <!--<item name="android:listPreferredItemHeightSmall">35dp</item>&lt;!&ndash; item size in menu&ndash;&gt;-->
+    </style>
+    <!--<style name="AppTheme.NoActionBar">-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="windowNoTitle">true</item>-->
+    <!--</style>-->
+
+    <style name="AppCompatAlertDialogStyle" parent="@android:style/Theme.Material.Light.Dialog">
+
+        <item name="android:windowTitleStyle">@style/DialogTitle</item>
+
+    </style>
+    <!--<style name="DefaultAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">-->
+        <!--<item name="android:colorAccent">#77c0d3</item>-->
+        <!--<item name="android:textColorSecondary">#d377d3</item>-->
+        <!--&lt;!&ndash;title&ndash;&gt;-->
+        <!--<item name="android:textSize">21sp</item>-->
+        <!--<item name="android:textColor">#77c0d3</item>-->
+    <!--</style>-->
+
+    <style name="DialogTitle">
+        <item name="android:colorAccent">#77c0d3</item>
+        <item name="android:textColorSecondary">#d377d3</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">#77c0d3</item>
+    </style>
+    <style name="spinnerTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:dropDownListViewStyle">@style/mySpinnerStyle</item>
+    </style>
+    <style name="mySpinnerStyle" parent="android:Widget.ListView.DropDown">
+        <item name="android:divider">#00ff00</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myclients"
+            android:icon="@drawable/shape"
+            android:title="My Clients" />
+        <item
+            android:id="@+id/nav_myplan"
+            android:icon="@drawable/myplan"
+            android:title="My Plan" />
+        <item
+            android:id="@+id/nav_goals"
+            android:icon="@drawable/goals"
+            android:title="Goals" />
+        <item
+            android:id="@+id/nav_initiatives"
+            android:icon="@drawable/initiatives"
+            android:title="Initiatives" />
+
+        <item
+            android:id="@+id/nav_relationship"
+            android:icon="@drawable/relationships"
+            android:title="Relationships" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>

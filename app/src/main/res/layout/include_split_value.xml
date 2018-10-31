@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <!--year1 splite value-->
+    <LinearLayout
+        android:id="@+id/ll_split0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/splitYear0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ Past"
+            android:textColor="#d9d9d9"
+            android:textSize="13sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_split0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_split_rl"
+            android:background="@drawable/initiative_splite_bg"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:padding="2dp">
+
+            <EditText
+                android:id="@+id/splitValue0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="0"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="#d9d9d9"
+                android:textSize="13sp"
+                android:editable="false"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!--year2 splite value-->
+    <LinearLayout
+        android:id="@+id/ll_split1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/splitYear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017"
+            android:textColor="#d9d9d9"
+            android:textSize="13sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_split1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_split_rl"
+            android:background="@drawable/initiative_splite_bg"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:padding="2dp">
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/splitValue1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="0"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="#d9d9d9"
+                android:textSize="13sp"
+                android:onClick="setSplitValue"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!--year3 splite value-->
+    <LinearLayout
+        android:id="@+id/ll_split2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/splitYear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018"
+            android:textColor="#d9d9d9"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_split2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_split_rl"
+            android:background="@drawable/initiative_splite_bg"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:padding="2dp">
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/splitValue2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="0"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="#d9d9d9"
+                android:textSize="13sp"
+                android:onClick="setSplitValue"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--year4 splite value-->
+    <LinearLayout
+
+        android:id="@+id/ll_split3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/splitYear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019"
+            android:textColor="#d9d9d9"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_split3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_split_rl"
+            android:background="@drawable/initiative_splite_bg"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:padding="2dp">
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/splitValue3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="0"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="#d9d9d9"
+                android:textSize="13sp"
+                android:onClick="setSplitValue"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!--year5 splite value-->
+    <LinearLayout
+        android:id="@+id/ll_split4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/splitYear4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FUTURE"
+            android:textColor="#d9d9d9"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_split4"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_split_rl"
+            android:background="@drawable/initiative_splite_bg"
+            android:layout_margin="3dp"
+            android:gravity="center">
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/splitValue4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="0"
+                android:onClick="setSplitValue"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="#d9d9d9"
+                android:textSize="13sp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

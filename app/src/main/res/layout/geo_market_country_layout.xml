@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+
+
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Geo"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@color/geo_market"
+            android:paddingLeft="3dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Markets"
+            android:layout_weight="1"
+            android:textColor="@color/geo_market"
+            android:textSize="18sp"
+            android:paddingLeft="3dp"
+
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:layout_weight="1"
+            android:textColor="@color/geo_market"
+            android:textSize="18sp"
+            android:paddingLeft="3dp"
+
+            />
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    >
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textNoSuggestions"
+        android:text="All"
+        android:textColor="@color/geo_market_edit_text"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:layout_marginRight="20dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+
+
+        />
+
+    <view
+        class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center"
+        android:onClick="showGeoMarketCountry"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/buttonGeo"
+        android:tag="0"
+
+
+        />
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textNoSuggestions"
+        android:text="All"
+        android:textSize="15sp"
+        android:textColor="@color/geo_market_edit_text"
+        android:layout_weight="1"
+        android:layout_marginRight="20dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+
+
+
+
+        />
+
+    <view
+        class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center"
+        android:onClick="showGeoMarketCountry"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/buttonMarkets"
+        android:tag="1"
+
+        />
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textNoSuggestions"
+        android:text="All"
+        android:textSize="15sp"
+        android:textColor="@color/geo_market_edit_text"
+        android:layout_weight="1"
+
+        />
+    <view
+        class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center"
+        android:onClick="showGeoMarketCountry"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/buttonCountry"
+        android:tag="2"
+
+
+        />
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Team Members"
+        android:gravity="left"
+        android:textSize="16sp"
+        android:textColor="#FF474F64"
+        />
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height=".1dp"-->
+        <!--android:background="#933b3b"-->
+        <!--android:layout_marginTop="5dp"-->
+
+
+        <!--/>-->
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ibm.cio.gss.isap_lite.fragment.RelationshipMoreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter By : "
+        android:textColor="#363636"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginLeft="15dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relationship  : "
+            android:textColor="#363636"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+
+            />
+        <TextView
+            android:id="@+id/relationType"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:ems="10"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/geo_market_edit_text"
+            android:textSize="15sp"
+            android:text="All"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:maxLines="1"
+
+
+            />
+        <view
+            class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginRight="13dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="-50dp"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+        >
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relationshipMoreRecycle"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/statusBar_color"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/newLinkOpptToolbar"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Relationship"
+            android:textColor="@color/colorLogin"
+            android:textSize="20sp"
+            android:id="@+id/edit_relationshipTitle"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+
+            >
+
+
+            <view
+                class="com.ibm.cio.gss.isap_lite.stylekitIcons.cancel_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:id="@+id/cancelBtn"
+
+                />
+            <!--if you need cancel text instead of close stylekit icon pls uncomment below code-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Cancel"-->
+                <!--android:textColor="@color/colorLogin"-->
+                <!--android:textSize="18sp"-->
+                <!--android:id="@+id/cancelBtn"-->
+                <!--android:layout_marginRight="20dp"-->
+
+
+                <!--/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

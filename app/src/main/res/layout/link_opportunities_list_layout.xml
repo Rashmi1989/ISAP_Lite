@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CG5AEA3V5"
+            android:textColor="#292929"
+            android:textSize="14sp"
+            android:id="@+id/oppsId"
+
+
+            />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Impement new costumer Portal"
+            android:textColor="#292929"
+            android:textSize="14sp"
+            android:id="@+id/opportunityName"
+
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$9M"
+            android:textColor="#FF323232"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/oppsTCV"
+
+
+
+
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#e6e6e6"
+        android:layout_marginTop="3dp"
+
+
+
+        />
+
+
+
+</LinearLayout>

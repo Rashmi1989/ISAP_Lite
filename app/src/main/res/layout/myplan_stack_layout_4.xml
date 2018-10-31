@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/Main_stack4"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:gravity="bottom"
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+
+        >
+    <TextView
+        android:id="@+id/yr4_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Total"
+        android:text="0.0"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:gravity="center_horizontal"
+
+
+        />
+    <TextView
+        android:id="@+id/yr4_igf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/IGF"
+        android:text="0.0"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+
+
+        />
+    <TextView
+        android:id="@+id/yr4_solutions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Solutions"
+        android:text="0.0"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+
+
+        />
+    <TextView
+        android:id="@+id/yr4_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Cloud"
+        android:text="0.0"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+
+
+        />
+    <TextView
+        android:id="@+id/yr4_systems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Systems"
+        android:text="0.0"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+
+
+        />
+    <TextView
+        android:id="@+id/yr4_gts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/GTS"
+        android:text="0.0"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+
+
+        />
+    <TextView
+        android:id="@+id/yr4_gbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/GBS"
+        android:text="0.0"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+
+
+        />
+    </LinearLayout>
+</LinearLayout>

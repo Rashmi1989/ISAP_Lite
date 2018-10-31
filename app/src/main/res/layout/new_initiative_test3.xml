@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp" >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="16sp"
+                android:textColor="#ff1c1c"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#65b0c1"
+                android:textSize="16sp"
+                android:text="Initiative Name"/>
+        </LinearLayout>
+        <!--Initiative name edit field with character count-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter a Name"
+                android:textSize="14sp"
+                android:id="@+id/goalName"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#dadada"
+                android:textSize="12sp"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:text="0/50"
+                android:id="@+id/goalNameCharacters"/>
+        </LinearLayout>
+        <!--Initiative value field-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="16sp"
+                android:textColor="#ff1c1c"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#65b0c1"
+                android:textSize="16sp"
+                android:text="Value ($)"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter amount"
+                android:textSize="14sp"
+                android:id="@+id/value"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+
+                />
+        </LinearLayout>
+        <!--date fields-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#65b0c1"
+                android:textSize="16sp"
+                android:text="Create Date"
+                android:layout_marginRight="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="16sp"
+                android:textColor="#ff1c1c"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#65b0c1"
+                android:textSize="16sp"
+                android:text="Close Date"/>
+        </LinearLayout>
+        <!--date field inputs-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="06/26/2018"
+                android:layout_marginRight="20dp"
+                />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#65b0c1"
+                android:textSize="16sp"
+                android:text="1H"/>
+            <Switch
+                android:id="@+id/simpleSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#65b0c1"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:text="2H"/>
+        </LinearLayout>
+        <!--split value level-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#65b0c1"
+                android:textSize="16sp"
+                android:text="Splite Value ($)"/>
+        </LinearLayout>
+        <!--split Edit fields-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--year1 splite value-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="$0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="5%"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/initiative_splite_bg"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="2017"/>
+            </LinearLayout>
+            <!--year2 splite value-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="$0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="5%"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/initiative_splite_bg"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="2017"/>
+            </LinearLayout>
+            <!--year3 splite value-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="$0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="5%"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/initiative_splite_bg"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="2017"/>
+            </LinearLayout>
+            <!--year4 splite value-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="$0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="5%"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/initiative_splite_bg"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="2017"/>
+            </LinearLayout>
+            <!--year5 splite value-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="$0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="5%"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/initiative_splite_bg"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="2017"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--progress bar-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#65b0c1"
+                android:textSize="16sp"
+                android:text="In Progress"/>
+        </LinearLayout>
+        <!--Linked goal in progress -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="16sp"
+                android:textColor="#ff1c1c"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#65b0c1"
+                android:textSize="16sp"
+                android:text="Linked goals"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Link goals to the initiative"
+                android:textSize="14sp"
+                android:id="@+id/linkedGoal"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:drawableRight="@drawable/blue_down_arrow" />
+        </LinearLayout>
+        <!--Initiative Lead in progress -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="16sp"
+                android:textColor="#ff1c1c"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#65b0c1"
+                android:textSize="16sp"
+                android:text="Initiative Lead"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select a initiative lead"
+                android:textSize="14sp"
+                android:id="@+id/initiate_lead"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:drawableRight="@drawable/blue_down_arrow" />
+        </LinearLayout>
+        <!--Progress field in progress -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#65b0c1"
+                android:textSize="16sp"
+                android:text="Linked goals"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter a Name"
+                android:textSize="14sp"
+                android:id="@+id/progress"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:drawableRight="@drawable/blue_down_arrow" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--Initiative name with asterick-->
+
+
+</ScrollView>
+
+
+
+</LinearLayout>
+

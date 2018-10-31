@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">ISAP Lite</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">IBM EMAIL ID</string>
+    <string name="prompt_password">PASSWORD </string>
+    <string name="action_sign_in">SIGN IN</string>
+    <string name="action_help">Help</string>
+    <string name="action_touchId">Touch ID Login</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_clients">ClientsActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_signup">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="title_activity_fullscreen2">FullscreenActivity2</string>
+    <string name="title_activity_signin">Sign in</string>
+    <string name="title_activity_myplan">MyplanActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_isap_menu">IsapMenuActivity</string>
+    <string name="select_client_text">Select a client</string>
+    <string name="select_client_header_content">\"A goal without a plan </string>
+    <string name="select_client_header_content_1">\ is just a wish.\"</string>
+    <string name="select_client_middle_content">The ISAP mobile app is designed    </string>
+    <string name="select_client_middle_content1">to track your client\'s  business</string>
+    <string name="select_client_middle_content2">goals and relationships</string>
+    <string name="select_client_middle_content3"> while on the go.</string>
+    <string name="qoute_auther">Antoine de Saint-Exupery</string>
+    <string name="register_touchId">Register touch ID</string>
+    <string name="client_header_searchText">Search Clients</string>
+    <string name="graph_title">Revenue and Aspirations </string>
+    <string name="revenue_count">(in USD millions)</string>
+    <string name="gbs">GBS</string>
+    <string name="gts">GTS</string>
+    <string name="systems">Systems</string>
+    <string name="cloud">Cloud</string>
+    <string name="solutions">Solutions</string>
+    <string name="igf">IGF</string>
+    <string name="total">Total</string>
+    <string name="goal_text"> Showing all <b>active</b> Goals</string>
+    <string name="initiative_text"> Showing all <b>active</b> Initiatives</string>
+
+    <!-- Initiative grid header goes here -->
+    <string name="ini_name"> <b>Initiative Name</b></string>
+    <string name="ini_bunit"> <b>Business Unit</b></string>
+    <string name="ini_value"> <b>Initiative Value($M)</b></string>
+    <string name="ini_closeDate"> <b>Closing Date</b></string>
+    <string name="sample">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</string>
+    <string name="ini_scopes">Initiative Scope(s)</string>
+    <string name="partner_status">Partner Status</string>
+    <string name="linked_oppt">Linked Opportunities</string>
+    <string name="more_oppt">Tap to add more Opportunities</string>
+    <string name="country_prompt">Choose a Country</string>
+    <string name="error_category_selection">Please select category</string>
+
+    <string-array name="planets_array">
+        <item>Mercury </item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+
+    </string-array>
+
+</resources>

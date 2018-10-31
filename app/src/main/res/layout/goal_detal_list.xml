@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      >
+    <com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical"
+        app:leftEdgeSwipeOffset="0dp"
+        app:rightEdgeSwipeOffset="0dp">
+
+        <!--Dialog to Edit/Delete selected Goal-->
+        <LinearLayout
+            android:id="@+id/bottom_wraper"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/Edit"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/isap_edit"
+                android:gravity="center"
+                android:text="Edit"
+                android:textColor="#ffff" />
+
+            <TextView
+                android:id="@+id/Delete"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/isap_delete"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="#ffff" />
+
+        </LinearLayout>
+
+        <!--Displaying List of goals-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll_head"
+            >
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#FF323232"
+                    android:textSize="17sp"
+                    android:id="@+id/goal_detail"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Finance Risk Management"
+
+                    android:textSize="16sp"
+                    android:textColor="#FF3B6CAA"
+                    android:id="@+id/goal_detail_data"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Client Business unit"
+                    android:textSize="16sp"
+                    android:textColor="#FF000000"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/goal_detail_data1"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CIMB Fintech"
+                    android:textSize="16sp"
+                    android:textColor="#6b6b6b"
+                    android:id="@+id/goal_detail_data2"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Initiative"
+                    android:textSize="16sp"
+                    android:textColor="#FF000000"
+                    android:id="@+id/goal_detail_data3"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="#FF3B6CAA"
+                        android:id="@+id/goal_detail_data4"
+                        android:layout_weight="0.9"
+
+
+
+                        />
+
+                    <view
+                        class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/intiativePopupButton"
+                        android:layout_gravity="right"
+                        android:tag=""
+
+
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#e6e6e6"
+                    android:id="@+id/initiativeLabelGreyLine"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$0"
+                        android:textSize="20sp"
+                        android:textColor="#FF5AA700"
+                        android:id="@+id/goalAmount"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" + For IBM"
+                        android:textSize="20sp"
+                        android:textColor="#1e2023"
+                        android:gravity="left"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

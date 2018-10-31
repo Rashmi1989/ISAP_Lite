@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ibm.cio.gss.isap_lite.fragment.MyPlanFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--Horizontal card view with team member goes here  -->
+
+    <!--My plan graph goes here  -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <include
+            layout="@layout/myplan_teammember_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+
+
+
+        <ScrollView
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <include
+        layout="@layout/myplan_graph_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+    <include
+        layout="@layout/myplan_businessunit_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        />
+
+</LinearLayout>
+
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!--Business unit grid goes here  -->
+   <!-- <include
+        layout="@layout/myplan_businessunit_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        />-->
+
+</FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+
+        >
+        <CheckBox
+            android:id="@+id/addMoreOpptCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            />
+        <TextView
+            android:id="@+id/addMoreOpptId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CG-5AEA3V5"
+            android:textSize="16sp"
+            android:layout_weight="50"
+            android:layout_marginLeft="10dp"
+
+
+            />
+        <TextView
+            android:id="@+id/addOpptTcvValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="$9M"
+            android:textSize="16sp"
+            android:layout_weight="40"
+            android:gravity="center_horizontal"
+
+
+            />
+
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#e6e6e6"
+            android:layout_marginTop="5dp"
+
+            />
+
+
+</LinearLayout>

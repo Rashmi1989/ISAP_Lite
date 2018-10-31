@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Initiative Scope label-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/ini_scopes"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                />
+            <!--geo spinner -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Geo"
+                    android:textColor="#65b0c1"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/geoInitiativeIconLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|right"
+                android:layout_marginTop="-20dp">
+
+
+                <view
+                    android:id="@+id/geoPopUpClick"
+                    class="com.ibm.cio.gss.isap_lite.stylekitIcons.rightarrow_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+
+
+                    />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="5dp"
+                android:background="#e6e6e6"
+
+                />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/geoSelectRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <!--Market spinner -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Markets"
+                    android:textColor="#65b0c1"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/marketInitiativeIconLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|right"
+                android:layout_marginTop="-20dp">
+
+
+                <view
+                    android:id="@+id/marketPopUpClick"
+                    class="com.ibm.cio.gss.isap_lite.stylekitIcons.rightarrow_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+
+
+                    />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="5dp"
+                android:background="#e6e6e6"
+
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/marketSelectRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <!--Country spinner -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Countries"
+                    android:textColor="#65b0c1"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/countryInitiativeIconLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|right"
+                android:layout_marginTop="-20dp">
+
+
+                <view
+                    android:id="@+id/countryPopUpClick"
+                    class="com.ibm.cio.gss.isap_lite.stylekitIcons.rightarrow_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+
+
+                    />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="5dp"
+                android:background="#e6e6e6"
+
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/countrySelectRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <!--partner status label-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/partner_status"
+                android:textColor="#65b0c1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+
+                />
+            <!--partner status Radio button-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+
+                    <RadioButton
+                        android:id="@+id/none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="None" />
+
+                    <RadioButton
+                        android:id="@+id/potential"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="Potential" />
+
+                    <RadioButton
+                        android:id="@+id/involved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="Involved" />
+
+
+                </RadioGroup>
+                <!---->
+                <!--<RadioButton-->
+                <!--android:id="@+id/none"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="None" />-->
+                <!--<RadioButton-->
+                <!--android:id="@+id/potential"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="Potential" />-->
+                <!--<RadioButton-->
+                <!--android:id="@+id/involved"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="Involved" />-->
+
+
+            </LinearLayout>
+
+            <!--partner Role spinner -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Partner Role"
+                    android:textColor="#65b0c1"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/partner_role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+
+
+                >
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/partnerRoleIconLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|right"
+                android:layout_marginTop="-20dp">
+
+
+                <view
+                    android:id="@+id/partner_role_icon"
+                    class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="5dp"
+
+
+                    />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="5dp"
+                android:background="#e6e6e6"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_linked_oop">
+
+
+
+            <!--Linked opprtunities label-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/linked_oppt"
+                android:textColor="#65b0c1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="5dp"
+                android:background="#e6e6e6"
+
+                />
+            <!-- opprtunities label value-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 "
+                    android:id="@+id/linkedOpptCount"
+                    android:textColor="#434343"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="opportunities"
+                    android:textColor="#434343"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="|"
+                    android:textColor="#434343"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Total :"
+                    android:textColor="#434343"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$5k"
+                    android:id="@+id/totalLinkedOpptTextValue"
+                    android:textColor="#434343"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+
+
+                    />
+
+            </LinearLayout>
+
+            <!-- opprtunities table-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="100"
+
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:text="ID"
+                    android:textColor="#FF323232"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:text="Name"
+                    android:textColor="#FF323232"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:text="TCV"
+                    android:textColor="#FF323232"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#e6e6e6"
+
+
+                />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/selectedLinkedOpptsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                />
+            <!--more opprtunities label-->
+            <TextView
+                android:id="@+id/addMoreLinkedOppt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/more_oppt"
+                android:textColor="#65b0c1"
+                android:textSize="13sp"
+
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="5dp"
+                android:background="#e6e6e6"
+
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

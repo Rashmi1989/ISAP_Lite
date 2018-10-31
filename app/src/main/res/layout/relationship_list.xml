@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rel_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+
+        android:orientation="vertical"
+        app:leftEdgeSwipeOffset="0dp"
+        app:rightEdgeSwipeOffset="0dp">
+
+        <!--Dialog to Edit/Delete selected Relationship-->
+        <LinearLayout
+            android:id="@+id/bottom_wraper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/edit_rel"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/isap_edit"
+                android:gravity="center"
+                android:text="Edit"
+                android:layout_marginLeft="50dp"
+                android:textColor="#ffff" />
+
+            <TextView
+                android:id="@+id/delete_rel"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/isap_delete"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="#ffff" />
+
+
+        </LinearLayout>
+
+        <!--Displaying List of goals using card view-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll_head"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/item_title"
+                android:weightSum="100"
+                >
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:background="#3e6ead"
+                    android:id="@+id/holderexpandListBarColor"
+
+
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="88"
+
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/exe_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expand List"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#454545"
+
+                        />
+                    <TextView
+                        android:id="@+id/exe_postion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expand List one"
+                        android:visibility="gone"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#454545"
+
+                        />
+                    <TextView
+                        android:id="@+id/exe_bu_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="passive"
+                        android:textSize="14sp"
+                        android:textColor="#afafaf"
+
+                        />
+                    <TextView
+                        android:id="@+id/rel_assement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="passive List"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="#2d649e"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="12"
+                    >
+                    <view
+                        android:id="@+id/show_expand"
+                        class="com.ibm.cio.gss.isap_lite.stylekitIcons.plus_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center|right"
+                        android:layout_marginRight="10dp"
+                        android:visibility="gone"
+
+
+
+                        />
+                    <view
+                        android:id="@+id/show_expand2"
+                        class="com.ibm.cio.gss.isap_lite.stylekitIcons.plus_icon2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center|right"
+                        android:visibility="gone"
+
+
+                        />
+
+                    <view
+                        android:id="@+id/show_expand3"
+                        class="com.ibm.cio.gss.isap_lite.stylekitIcons.plus_icon3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center|right"
+
+
+
+                        />
+                    <view
+                        android:id="@+id/show_expand4"
+                        class="com.ibm.cio.gss.isap_lite.stylekitIcons.plus_icon4"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center|right"
+                        android:visibility="gone"
+                        />
+
+                    <view
+                        android:id="@+id/show_collaps6"
+                        class="com.ibm.cio.gss.isap_lite.stylekitIcons.collaps_icon6"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center|right"
+                        android:visibility="gone"
+
+
+                        />
+                    <view
+                        android:id="@+id/show_collaps7"
+                        class="com.ibm.cio.gss.isap_lite.stylekitIcons.collaps_icon8"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center|right"
+                        android:visibility="gone"
+
+
+                        />
+                    <view
+                        android:id="@+id/show_collaps9"
+                        class="com.ibm.cio.gss.isap_lite.stylekitIcons.collaps_icon9"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center|right"
+                        android:visibility="gone"
+
+
+                        />
+                    <view
+                        android:id="@+id/show_collaps8"
+                        class="com.ibm.cio.gss.isap_lite.stylekitIcons.collaps_icon7"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center|right"
+                        android:visibility="gone"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <include
+                    android:id="@+id/sub_item"
+                    layout="@layout/relationship_expand_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+
+            </LinearLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dip"-->
+                <!--android:background="#e6e6e6"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+
+                <!--/>-->
+        </LinearLayout>
+
+
+    </com.daimajia.swipe.SwipeLayout>
+
+</LinearLayout>

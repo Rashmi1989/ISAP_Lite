@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <!--Bu list1 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="10dp"
+
+            >
+            <CheckBox
+                android:id="@+id/relevantBuCheckbox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:layout_marginLeft="8dp"
+                />
+            <TextView
+                android:id="@+id/relevantBuName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="AMS"
+                android:textColor="#616263"
+                android:textSize="14sp"
+                android:layout_weight="70"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:hint=""
+                android:textSize="14sp"
+                android:id="@+id/relevantBuValueEditText"
+                android:lines="1"
+                android:digits="0123456789."
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="15%"
+                android:layout_weight="20"
+                android:layout_marginRight="8dp"
+                android:imeOptions="actionDone"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#65b0c1"
+                android:background="@drawable/initiative_splite_bg"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#e6e6e6"
+            android:layout_marginTop="5dp"
+
+            />
+
+
+</LinearLayout>

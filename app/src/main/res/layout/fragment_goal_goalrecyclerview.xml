@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+
+        android:orientation="vertical"
+        app:leftEdgeSwipeOffset="0dp"
+        app:rightEdgeSwipeOffset="0dp">
+
+        <!--Dialog to Edit/Delete selected Goal-->
+        <LinearLayout
+            android:id="@+id/bottom_wraper"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/Edit"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/isap_edit"
+                android:gravity="center"
+                android:text="Edit"
+                android:textColor="#ffff" />
+
+            <TextView
+                android:id="@+id/Delete"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/isap_delete"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="#ffff" />
+
+        </LinearLayout>
+
+        <!--Displaying List of goals using card view-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8f2f2f2"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <!--Displaying List of goals in vertical way-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:id="@+id/ll_head"
+                android:orientation="vertical">
+                <!--Displaying goal name field-->
+                <TextView
+                    android:id="@+id/goalNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text="Oprimise long haul logistics Ibm india pvt ltd bangalore manyata"
+                    android:textColor="@color/goalName"
+                    android:textSize="16sp" />
+                <!--Displaying goal description field-->
+                <TextView
+                    android:id="@+id/goalDescriptionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:paddingLeft="5dp"
+                    android:text="@string/sample"
+                    android:textColor="#292929"
+                    android:textSize="13sp" />
+                <!--Displaying number of initiatives and value-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/goalInitiativeCountTextField"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="6 Initiatives"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/goal_devider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="|"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/goalInitiativeValueText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text=" $30M Total Initiative Value"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.daimajia.swipe.SwipeLayout>
+
+</LinearLayout>

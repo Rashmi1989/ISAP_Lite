@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ibm.cio.gss.isap_lite.fragment.GoalDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+
+
+        >
+        <TextView
+            android:id="@+id/goal_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/goal_text"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="#FF75BACA"
+            />
+        <TextView
+            android:id="@+id/ini_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/initiative_text"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="#FF75BACA"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <Button
+                android:id="@+id/goal_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/goal_round_btn"
+                android:paddingLeft="65dp"
+                android:paddingRight="65dp"
+                android:text="Goals"
+                android:textAllCaps="false"
+
+
+                android:textColor="#ffffff" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Initiatives"
+                android:textAllCaps="false"
+                android:background="@drawable/initiative_round_btn"
+                android:textColor="#FF78BAC9"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:id="@+id/initiative_tab"
+                />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycleView"
+            />
+    </LinearLayout>
+</FrameLayout>

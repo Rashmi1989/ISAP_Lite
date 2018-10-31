@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+
+
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="50dp"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/statusBar_color"
+        >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+
+         >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:text="Initiative"
+             android:textColor="@color/colorLogin"
+             android:textSize="20sp"
+             android:gravity="center"
+             android:layout_marginLeft="10dp"
+             android:id="@+id/goalInitiativePageTitle"
+
+             />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="right"
+             android:layout_marginTop="15dp"
+
+             >
+
+
+             <view
+                 class="com.ibm.cio.gss.isap_lite.stylekitIcons.cancel_btn"
+                 android:layout_width="15dp"
+                 android:layout_height="15dp"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_marginRight="20dp"
+                 android:id="@+id/goalIntiativeCancel"
+
+
+                 />
+
+
+         </LinearLayout>
+
+     </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    >
+
+
+    <!--<include-->
+        <!--layout="@layout/add_goal_intiative_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+
+
+        <!--/>-->
+
+    <!--<include-->
+        <!--layout="@layout/contact_ibm"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+
+
+        <!--/>-->
+    <!--<include-->
+        <!--layout="@layout/relevant_bu"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+
+
+        <!--/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/addGoal_initiative_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <ListView
+        android:id="@+id/initiative_dialog_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+</LinearLayout>
+
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Select"
+            android:id="@+id/selectInitiativeTextView"
+            android:background="#e4e8ed"
+            android:gravity="center"
+            android:textSize="18sp"
+
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

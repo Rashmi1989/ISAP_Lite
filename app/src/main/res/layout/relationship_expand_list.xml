@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:background="#3e6ead"
+            android:id="@+id/expandListBarColor"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#e6e6e6"
+                android:layout_marginTop="3dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IBM Primary Contact"
+                    android:textColor="#454545"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+                >
+                <TextView
+                    android:id="@+id/primary_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#2d649e"
+
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IBM Contact(s)"
+                    android:id="@+id/IBMContactLabel"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#454545"
+                    android:layout_weight="90"
+
+                    />
+                <TextView
+                    android:id="@+id/contact_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#454545"
+                    android:layout_weight="10"
+
+
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:id="@+id/ibmContactsGreyLine"
+                android:background="#e6e6e6"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+
+                >
+                <TextView
+                    android:id="@+id/first_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#2d649e"
+                    android:layout_weight="85"
+
+                    />
+                <view
+                    android:id="@+id/show_contacts"
+                    class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="15"
+
+
+
+
+
+
+                />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#e6e6e6"
+                android:id="@+id/ibmContactsListGreyLine"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Action Plan"
+                    android:id="@+id/actionPlanLevel"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#454545"
+                    android:layout_weight="85"
+
+
+                    />
+                <view
+                android:id="@+id/show_action_plan"
+                class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_weight="15"
+
+
+
+
+
+                />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+                >
+                <TextView
+                    android:id="@+id/action_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#454545"
+
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Initiative"
+                    android:id="@+id/initiativeLabel"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#454545"
+                    android:layout_weight="10"
+
+
+                    />
+                <TextView
+                    android:id="@+id/initiative_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#454545"
+                    android:layout_weight="90"
+
+
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#e6e6e6"
+                android:id="@+id/initiativeLabelGreyLine"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+
+                >
+
+                <TextView
+                    android:id="@+id/first_initiative"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="85"
+                    android:text=""
+                    android:textColor="#2d649e"
+                    android:textSize="14sp"
+
+
+                    />
+                <view
+                android:id="@+id/show_initiatives"
+                class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_weight="15"
+
+
+
+                />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#e6e6e6"
+                android:id="@+id/initiativeListGreyLine"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lead"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#454545"
+                    android:layout_weight="40"
+
+
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Value"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#454545"
+                    android:layout_weight="60"
+
+
+
+
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+
+                >
+                <TextView
+                    android:id="@+id/lead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#2d649e"
+                    android:layout_weight="40"
+
+
+
+                    />
+                <TextView
+                    android:id="@+id/lead_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#454545"
+                    android:layout_weight="60"
+
+
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Linked Oppty. Value"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#454545"
+                    android:layout_weight="40"
+
+
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Linked Oppty. Count"
+                    android:textSize="14sp"
+                    android:textColor="#454545"
+                    android:textStyle="bold"
+                    android:layout_weight="60"
+
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+
+                >
+                <TextView
+                    android:id="@+id/linked_oppty_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#454545"
+                    android:layout_weight="40"
+
+                    />
+                <TextView
+                    android:id="@+id/linked_oppty_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#454545"
+                    android:layout_weight="60"
+
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brands"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#454545"
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+                >
+                <TextView
+                    android:id="@+id/rel_business_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#454545"
+
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Closing Date Range"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#454545"
+
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+                >
+                <TextView
+                    android:id="@+id/date_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#454545"
+
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

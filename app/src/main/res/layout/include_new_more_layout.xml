@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <LinearLayout
+
+        android:id="@+id/moreLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFB3D6DE"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/moreClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="More"
+            android:textColor="@color/colorLogin"
+            android:textSize="16sp" />
+
+        <view
+            android:id="@+id/moreClickedIcon"
+            class="com.ibm.cio.gss.isap_lite.stylekitIcons.morearrow_icon"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="15dp"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/saveLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFB3D6DE"
+        android:orientation="horizontal">
+        <!--add new goal btn text -->
+        <LinearLayout
+            android:id="@+id/goleEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/newText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="New Goal"
+                android:textColor="@color/colorLogin"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+        <!--add new goal plus btn icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <view
+                android:id="@+id/newButton"
+                class="com.ibm.cio.gss.isap_lite.stylekitIcons.gole_btn_plus"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout> 

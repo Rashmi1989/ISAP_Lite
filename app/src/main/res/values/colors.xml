@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1d4961</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <!--<color name="colorAccent">#ff4081</color>-->
+    <color name="colorAccent">#77c0d3</color>
+    <color name="colorLogin">#ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="colorLoginBG">#71a3b6</color>
+    <color name="bg">#68A5BC</color>
+    <color name="statusBar_color">#7BBDC9</color>
+    <color name="app_gray">#DBE6EA</color>
+    <color name="menu_item">#82B0C8</color>
+    <color name="tool_bar">#77c0d3</color>
+    <color name="client_header_text">#FFFF6800</color>
+    <color name="client_middle_text">#FF303030</color>
+    <color name="client_text_auther">#FFAFB7B7</color>
+    <color name="register_toichid">#274b60</color>
+    <color name="select_client_bg">#FF325E73</color>
+    <color name="client_section_header">#FFDAE4E9</color>
+    <color name="geo_market">#FF78BAC9</color>
+    <color name="geo_market_edit_text">#FF474F64</color>
+    <color name="GBS">#FF8ACBF9</color>
+    <color name="GTS">#FF489EE1</color>
+    <color name="Cloud">#FFFFE07C</color>
+    <color name="Systems">#f69531</color>
+    <color name="Solutions">#FFB5C0C0</color>
+    <color name="IGF">#FFEA6231</color>
+    <color name="Total">#74868e</color>
+    <color name="graph_title">#FF323232</color>
+    <color name="revenue_count">#FF777677</color>
+    <color name="label_btn_text">#FF474F64</color>
+    <color name="isap_edit">#BBDCE4</color>
+    <color name="isap_delete">#FF6800</color>
+    <color name="goalName">#FF3B6CAA</color>
+    <color name="ini_split_box_gray">#d9d9d9</color>
+
+
+
+
+</resources>

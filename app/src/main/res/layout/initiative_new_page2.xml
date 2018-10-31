@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <!--Initiative Scope label-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#65b0c1"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:text="Describe Initiative "/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint=""
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:padding="5dp"
+        android:inputType="text|textMultiLine"
+        android:background="@drawable/goal_description_stroke"
+        android:gravity="top"
+        android:maxLength="1000"
+        android:id="@+id/initiativeDescription"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#65b0c1"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:text="Value to the Client "/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint=""
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:inputType="text|textMultiLine"
+        android:background="@drawable/goal_description_stroke"
+        android:gravity="top"
+        android:maxLength="1000"
+        android:id="@+id/ini_clientValue"
+
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#65b0c1"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="Industry Solutions"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:id="@+id/industrySolutionSpinnerLayout"
+
+
+        >
+
+    </LinearLayout>
+    <FrameLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|right"
+        android:layout_marginTop="-20dp"
+        >
+
+
+        <view
+            android:id="@+id/industrySolution_icon"
+            class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+
+
+            />
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#e6e6e6"
+        android:layout_marginTop="5dp"
+
+        />
+    <!--strategic popup start-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="16sp"
+            android:textColor="#ff1c1c"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#65b0c1"
+            android:textSize="16sp"
+            android:text="Strategic Imperatives"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|right"
+        android:layout_marginTop="-20dp"
+        >
+
+
+        <view
+            android:id="@+id/strategicImperativesButton"
+            class="com.ibm.cio.gss.isap_lite.stylekitIcons.rightarrow_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+
+
+            />
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#e6e6e6"
+        android:layout_marginTop="5dp"
+
+        />
+
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/strategic_initiativeSelectedRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    />
+
+    <!--Brands popup start-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="16sp"
+            android:textColor="#ff1c1c"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#65b0c1"
+            android:textSize="16sp"
+            android:text="Relevant Brands/Units"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|right"
+        android:layout_marginTop="-20dp"
+        >
+
+
+        <view
+            android:id="@+id/relevantBUIcon"
+            class="com.ibm.cio.gss.isap_lite.stylekitIcons.rightarrow_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+
+
+            />
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#e6e6e6"
+        android:layout_marginTop="5dp"
+
+        />
+
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/relevantBURecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

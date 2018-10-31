@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+
+
+        >
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Business Unit"
+            android:textColor="#868686"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+
+            />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textColor="#868686"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+
+
+
+            />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="CAGR"
+            android:textColor="#868686"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+
+
+
+        >
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Business Solution"
+            android:textColor="#FF323232"
+            android:textSize="14sp"
+
+
+
+            />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="$36.78M"
+            android:textColor="#FF323232"
+            android:textSize="14sp"
+            android:layout_weight="1"
+
+
+
+            />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="-12.99$"
+            android:textColor="#f24242"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#e6e6e6"
+        android:layout_marginTop="3dp"
+
+
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+
+
+
+        >
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Business Solution"
+            android:textColor="#FF323232"
+            android:textSize="14sp"
+
+
+
+            />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="$36.78M"
+            android:textColor="#FF323232"
+            android:textSize="14sp"
+            android:layout_weight="1"
+
+
+
+            />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="-12.99$"
+            android:textColor="#f24242"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#e6e6e6"
+        android:layout_marginTop="3dp"
+
+
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+
+
+
+        >
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Business Solution"
+            android:textColor="#FF323232"
+            android:textSize="14sp"
+
+
+
+            />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="$36.78M"
+            android:textColor="#FF323232"
+            android:textSize="14sp"
+            android:layout_weight="1"
+
+
+
+            />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="-12.99$"
+            android:textColor="#f24242"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#e6e6e6"
+        android:layout_marginTop="3dp"
+
+
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+
+
+
+        >
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Business Solution"
+            android:textColor="#FF323232"
+            android:textSize="14sp"
+
+
+
+            />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="$36.78M"
+            android:textColor="#FF323232"
+            android:textSize="14sp"
+            android:layout_weight="1"
+
+
+
+            />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="-12.99$"
+            android:textColor="#f24242"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#e6e6e6"
+        android:layout_marginTop="3dp"
+
+
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+
+
+
+        >
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Business Solution"
+            android:textColor="#FF323232"
+            android:textSize="14sp"
+
+
+
+            />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="$36.78M"
+            android:textColor="#FF323232"
+            android:textSize="14sp"
+            android:layout_weight="1"
+
+
+
+            />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="-12.99$"
+            android:textColor="#f24242"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#e6e6e6"
+        android:layout_marginTop="3dp"
+
+
+
+        />
+</LinearLayout>

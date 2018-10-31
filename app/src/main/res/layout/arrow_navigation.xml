@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+
+    >
+
+    <view
+        android:id="@+id/prevView"
+        class="com.ibm.cio.gss.isap_lite.stylekitIcons.leftarrow_grey_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="left|center"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+
+
+
+       />
+
+    <TextView
+        android:id="@+id/mypage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Plan"
+        android:textColor="#FF323232"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/nextpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goals"
+        android:textColor="@color/tool_bar"
+        android:layout_gravity="center_vertical"
+        android:gravity="right|center"
+        android:layout_marginLeft="40dp"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+
+      />
+
+
+    <view
+        android:id="@+id/nextView"
+        class="com.ibm.cio.gss.isap_lite.stylekitIcons.rightarrow_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="right|center"
+        android:layout_marginRight="5dp"
+
+
+         />
+
+</LinearLayout>

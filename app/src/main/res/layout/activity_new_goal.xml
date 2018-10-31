@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data  >
+        <variable
+            name="goal"
+            type="com.ibm.cio.gss.isap_lite.viewModel.GoalViewModel" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout2">
+
+            <include
+                layout="@layout/edit_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\u002A"
+                            android:textSize="16sp"
+                            android:textColor="#ff1c1c"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#65b0c1"
+                            android:textSize="16sp"
+                            android:text="Name"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter a goal name"
+                            android:textSize="14sp"
+                            android:id="@+id/goalName"
+                            android:maxLength="50"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="@={goal.goalName}"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#dadada"
+                            android:textSize="12sp"
+                            android:gravity="right"
+                            android:layout_gravity="right"
+                            android:text="0/50"
+                            android:id="@+id/goalNameCharacters"/>
+
+                    </LinearLayout>
+
+
+                    <!--1st dropdown text-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\u002A"
+                            android:textSize="16sp"
+                            android:textColor="#ff1c1c"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#65b0c1"
+                            android:textSize="16sp"
+                            android:text="Category"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/categoryDropDownLayout"
+                        >
+
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/FlashBarLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|right"
+                        android:layout_marginTop="-20dp"
+                        >
+
+
+                        <view
+                            android:id="@+id/category_icon"
+                            class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="5dp"
+
+
+                            />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="#e6e6e6"
+                        android:layout_marginTop="5dp"
+
+                        />
+                    <!--2nd dropdown text-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+
+
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#65b0c1"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="3dp"
+                            android:text="Client Business Unit"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp"
+
+
+                        >
+
+                        <AutoCompleteTextView
+                            android:id="@+id/cbuList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:backgroundTint="#d4e0e6"
+                            android:ems="10"
+                            android:hint="Client Business Unit"
+                            android:text=""
+                            android:maxLength="50"
+                            android:textSize="14sp">
+
+                            <requestFocus />
+
+                        </AutoCompleteTextView>
+
+
+
+                    </LinearLayout>
+
+                    <!--3rd dropdown text-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/geoDropDownLayout"
+
+
+                        >
+
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/marketDropDownIconLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|right"
+                        android:layout_marginTop="-20dp"
+                        >
+
+
+                        <view
+                            android:id="@+id/market_icon"
+                            class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="5dp"
+
+
+                            />
+                    </FrameLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="#e6e6e6"
+                        android:layout_marginTop="5dp"
+
+                        />
+
+
+                    <LinearLayout
+                        android:id="@+id/marketDropDownLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        >
+
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/geoDropDownIconLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|right"
+                        android:layout_marginTop="-20dp"
+                        >
+
+
+                        <view
+                            android:id="@+id/geo_icon"
+                            class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="5dp"
+
+
+                            />
+                    </FrameLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="#e6e6e6"
+                        android:layout_marginTop="5dp"
+
+                        />
+
+                    <!--4th dropdown text-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/countryDropDownLayout"
+
+
+                        >
+
+
+
+
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/countryDropDownIconLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|right"
+                        android:layout_marginTop="-20dp"
+                        >
+
+
+                        <view
+                            android:id="@+id/country_icon"
+                            class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="5dp"
+
+
+                            />
+                    </FrameLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="#e6e6e6"
+                        android:layout_marginTop="5dp"
+
+                        />
+
+                    <!--5th dropdown text-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+
+
+                        >
+
+                        <TextView
+                            android:id="@+id/initiative"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#787878"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Initiatives"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+
+                            <view
+                                android:id="@+id/editGoalInitiativeRightArrow"
+                                class="com.ibm.cio.gss.isap_lite.stylekitIcons.rightarrow_icon"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="5dp"
+
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="#e6e6e6"
+                        android:layout_marginTop="5dp"
+
+                        />
+
+                    <!--<include-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--layout="@layout/addgoal_initiative"-->
+                    <!--android:layout_marginTop="10dp"-->
+
+
+                    <!--/>-->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/addGoal_initiativeSelectedRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+
+
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp"
+
+
+
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#65b0c1"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="5dp"
+                                android:text="Description"/>
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#dadada"
+                                android:textSize="12sp"
+                                android:gravity="right"
+                                android:text="0/1000"
+                                android:id="@+id/descriptionCharacters"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:hint="Write a brief description of the goal"
+                            android:textSize="14sp"
+                            android:padding="5dp"
+                            android:inputType="text|textMultiLine"
+                            android:background="@drawable/goal_description_stroke"
+                            android:gravity="top"
+                            android:maxLength="1000"
+                            android:id="@+id/goalDescription"
+                            android:text="@={goal.description}"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Save"
+                android:background="#e4e8ed"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:id="@+id/saveGoal"
+
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+</layout>

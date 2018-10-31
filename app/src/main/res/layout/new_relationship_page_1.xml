@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u002A"
+                android:textSize="16sp"
+                android:textColor="#ff1c1c"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#65b0c1"
+                android:textSize="16sp"
+                android:text="Executive Name"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type a known name"
+                android:textSize="15sp"
+                android:id="@+id/executiveName"
+                android:maxLength="50"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColorHint="#c2cece"
+                android:singleLine="true"
+
+
+                />
+
+
+        </LinearLayout>
+
+        <!--bu spinner start-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business Unit "
+                android:textColor="#65b0c1"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bunit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/addMoreOpptLinkedInitiativeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_marginTop="-20dp">
+
+
+            <view
+                android:id="@+id/bunit_icon"
+                class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+
+
+                />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="5dp"
+            android:background="#e6e6e6"
+
+            />
+        <!--position spinner start-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u002A"
+                android:textSize="16sp"
+                android:textColor="#ff1c1c"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position "
+                android:textColor="#65b0c1"
+                android:textSize="16sp" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/newRelationshipPositionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+
+        <FrameLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_marginTop="-20dp">
+
+
+            <view
+                android:id="@+id/newRelationshipLayout_icon"
+                class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+
+
+                />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="5dp"
+            android:background="#e6e6e6"
+
+            />
+
+        <!--Relationship Assessment spinner start-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u002A"
+                android:textSize="16sp"
+                android:textColor="#ff1c1c"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relationship Assessment "
+                android:textColor="#65b0c1"
+                android:textSize="16sp" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/newRelationshipAssessmentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            >
+
+        </LinearLayout>
+
+        <FrameLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_marginTop="-20dp">
+
+
+            <view
+                android:id="@+id/newRelationshipAssessmentLayout_icon"
+                class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+
+
+                />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="5dp"
+            android:background="#e6e6e6"
+
+            />
+        <!--Relationship Assessment spinner start-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identify initiatives to this executive "
+                android:textColor="#1b1b1b"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/newRelationshipIdentifyInitiativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+
+        <FrameLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_marginTop="-20dp">
+
+
+            <view
+                android:id="@+id/newRelationshipIdentifyInitiativeLayout_icon"
+                class="com.ibm.cio.gss.isap_lite.stylekitIcons.rightarrow_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+
+
+                />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="5dp"
+            android:background="#e6e6e6"
+
+            />
+
+
+        <!--<include-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--layout="@layout/addgoal_initiative"-->
+            <!--android:layout_marginTop="10dp"-->
+
+
+            <!--/>-->
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/addGoal_initiativeSelectedRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

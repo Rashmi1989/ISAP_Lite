@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+
+
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="#16509a"
+            android:textSize="26sp"
+            android:layout_weight="8"
+            android:id="@+id/actionPlanSerialNo"
+            android:text="1."/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:id="@+id/actionPlanName"
+            android:maxLength="50"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColorHint="#c2cece"
+            android:singleLine="true"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/relationship_edittext_stroke"
+            android:layout_weight="87"
+            android:imeOptions="actionDone"
+
+            />
+        <view
+            android:id="@+id/actionPlan_delete_icon"
+            class="com.ibm.cio.gss.isap_lite.stylekitIcons.close_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="5"
+
+
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No IBM contact assigned "
+            android:id="@+id/actionPlanIBMContactName"
+            android:textColor="#1b1b1b"
+            android:textSize="16sp" />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/relationshipContactAssign1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        >
+
+    </LinearLayout>
+
+    <FrameLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|right"
+        android:layout_marginTop="-20dp">
+
+
+        <view
+
+            class="com.ibm.cio.gss.isap_lite.stylekitIcons.rightarrow_icon"
+            android:id="@+id/actionPlanShowContacts"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+
+
+            />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dp"
+        android:background="#e6e6e6"
+
+        />
+
+    <!--date and status xml start-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginTop="10dp"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date "
+            android:textColor="#1b1b1b"
+            android:layout_weight="40"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Status "
+            android:textColor="#1b1b1b"
+            android:layout_weight="60"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginTop="10dp"
+
+        >
+        <TextView
+            android:id="@+id/rel_actionPlan_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#1b1b1b"
+            android:layout_weight="40"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="60"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Archived "
+                    android:textColor="#1b1b1b"
+                    android:textSize="16sp" />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rel_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+            </LinearLayout>
+
+            <FrameLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|right"
+                android:layout_marginTop="-20dp">
+
+
+                <view
+
+                    class="com.ibm.cio.gss.isap_lite.stylekitIcons.downarrowdropdown_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/showStatusSpinner"
+                    android:layout_marginTop="5dp"
+
+
+                    />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="5dp"
+                android:background="#e6e6e6"
+
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
