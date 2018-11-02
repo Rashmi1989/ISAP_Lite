@@ -69,7 +69,7 @@ public class CountryMultiSelectListAdapter extends RecyclerView.Adapter<CountryM
         return new MyViewHolder(itemView);
     }
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder,  int position) {
         holder.setIsRecyclable(false);
         countryDetailList = countryList.get(position);
         holder.initiativeNameLabel.setText(countryDetailList.getNAME());
@@ -100,8 +100,9 @@ public class CountryMultiSelectListAdapter extends RecyclerView.Adapter<CountryM
         holder.addGoalCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                int y = holder.getAdapterPosition();
                 if (isChecked) {
-                    if (position == 0) {
+                    if (y == 0) {
                         for (int i = 0; i < listCheckbox.length; i++) {
                             if (i == 0) {
                                 listCheckbox[0] = true;
@@ -117,8 +118,8 @@ public class CountryMultiSelectListAdapter extends RecyclerView.Adapter<CountryM
                                 listCheckbox[0] = false;
                                 choiceMap.put(0, false);
                             } else {
-                                listCheckbox[position] = true;
-                                choiceMap.put(position, true);
+                                listCheckbox[y] = true;
+                                choiceMap.put(y, true);
                             }
                         }
                     }
