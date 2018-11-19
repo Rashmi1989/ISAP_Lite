@@ -60,7 +60,7 @@ public class SelectedGeoListAdapter extends RecyclerView.Adapter<SelectedGeoList
         return new MyViewHolder(itemView);
     }
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder,int position) {
         try{
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.setMarginEnd(20);
@@ -68,7 +68,7 @@ public class SelectedGeoListAdapter extends RecyclerView.Adapter<SelectedGeoList
         holder.deleteButtonView.setVisibility(View.INVISIBLE);
         holder.deleteButtonView.setVisibility(View.GONE);
         holder.setIsRecyclable(false);
-        geoDetailList = geoList.get(position);
+        geoDetailList = geoList.get(holder.getAdapterPosition());
         holder.initiativeNameLabel.setText(geoDetailList.getNAME());
         holder.deleteButtonView.setOnClickListener(new View.OnClickListener() {
             @Override
