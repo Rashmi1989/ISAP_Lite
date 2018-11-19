@@ -68,10 +68,10 @@ public class LinkedGoalsMultiSelectAdapter extends RecyclerView.Adapter<LinkedGo
         return new MyViewHolder(itemView);
     }
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder,int position) {
         try {
             holder.setIsRecyclable(false);
-            strategicimperativesDetailList = strategicimperativesList.get(position);
+            strategicimperativesDetailList = strategicimperativesList.get(holder.getAdapterPosition());
             holder.initiativeNameLabel.setText(strategicimperativesDetailList.getVALUE());
             if (strategicimperativesDetailList.getisSelected()) {
                 holder.addGoalCheckBox.setChecked(true);
