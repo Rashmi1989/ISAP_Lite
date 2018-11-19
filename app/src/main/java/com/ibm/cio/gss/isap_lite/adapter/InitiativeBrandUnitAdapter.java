@@ -64,7 +64,7 @@ public class InitiativeBrandUnitAdapter extends RecyclerView.Adapter<InitiativeB
     public void onBindViewHolder(final InitiativeBrandUnitAdapter.MyViewHolder holder,int position) {
       try{
         holder.setIsRecyclable(true);
-        int rowIndex = position;  
+        final int rowIndex = position;  
         brandData=brandList.get(rowIndex);
         if(brandData.isSection())
         holder.relevantBUTitle.setText(brandData.getBRAND_GROUP());
