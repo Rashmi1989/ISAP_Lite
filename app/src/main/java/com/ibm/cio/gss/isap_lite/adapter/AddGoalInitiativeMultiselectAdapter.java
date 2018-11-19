@@ -91,7 +91,7 @@ public class AddGoalInitiativeMultiselectAdapter extends RecyclerView.Adapter<Ad
     }
 
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder,int position) {
       try{
         holder.setIsRecyclable(false);
         goalDetailsList = goalsList.get(position);
