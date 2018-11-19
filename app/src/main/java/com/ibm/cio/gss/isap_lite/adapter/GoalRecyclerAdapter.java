@@ -130,10 +130,10 @@ public class GoalRecyclerAdapter extends RecyclerView.Adapter<GoalRecyclerAdapte
         return new MyViewHolder(itemView);
     }
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder,int position) {
      try{
         holder.setIsRecyclable(true);
-        goalDetailsList = goalsList.get(position);
+        goalDetailsList = goalsList.get(holder.getAdapterPosition());
         holder.goalNameLabel.setText(goalDetailsList.getSTRATEGIC_GOAL_NM());
         holder.goalDescriptionLabel.setText(goalDetailsList.getGOAL_DESC_TXT());
         if(goalDetailsList.getNO_OF_INTIATIVES().equalsIgnoreCase("0")){
