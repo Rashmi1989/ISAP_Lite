@@ -76,7 +76,7 @@ public class MarketsMultiSelectListAdapter extends RecyclerView.Adapter<MarketsM
     public void onBindViewHolder(final MyViewHolder holder,int position) {
         try{
         holder.setIsRecyclable(false);
-        int rowIndex = position;
+        final int rowIndex = position;
         marketDetailsList = marketsList.get(rowIndex);
         holder.initiativeNameLabel.setText(marketDetailsList.getNAME());
         if(marketDetailsList.getisSelected()){
