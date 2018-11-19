@@ -69,10 +69,10 @@ public class InitiativeLeadContactsAdapter extends RecyclerView.Adapter<Initiati
         return new InitiativeLeadContactsAdapter.MyViewHolder(itemView);
     }
     @Override
-    public void onBindViewHolder(final InitiativeLeadContactsAdapter.MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final InitiativeLeadContactsAdapter.MyViewHolder holder,int position) {
         try{
         holder.setIsRecyclable(false);
-        contactInfo = contactList.get(position);
+        contactInfo = contactList.get(holder.getAdapterPosition());
         Glide.with(ctx)
                 .load(ISAP_Constants.IMC_IMAGE_URL+contactInfo.getEmailId())
                 .asBitmap()
