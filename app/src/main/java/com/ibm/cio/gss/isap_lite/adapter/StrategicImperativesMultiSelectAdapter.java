@@ -62,10 +62,10 @@ public class StrategicImperativesMultiSelectAdapter extends RecyclerView.Adapter
     }
 
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder,int position) {
         try{
         holder.setIsRecyclable(false);
-        strategicimperativesDetailList = strategicimperativesList.get(position);
+        strategicimperativesDetailList = strategicimperativesList.get(holder.getAdapterPosition());
         holder.initiativeNameLabel.setText(strategicimperativesDetailList.getNAME());
         if(strategicimperativesDetailList.getisSelected()){
             holder.addGoalCheckBox.setChecked(true);
