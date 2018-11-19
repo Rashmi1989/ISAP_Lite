@@ -246,7 +246,7 @@ public class RelationshipActionPlanAdapter extends RecyclerView.Adapter<Relation
         }
     }
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder, int position) {
         try{
         holder.setIsRecyclable(true);
         actionPlansDetail = action_plansList.get(holder.getAdapterPosition());
@@ -281,7 +281,7 @@ public class RelationshipActionPlanAdapter extends RecyclerView.Adapter<Relation
             holder.planNameEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
                 public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
-                    if (position == EditorInfo.IME_ACTION_DONE) {
+                    if (holder.getAdapterPosition == EditorInfo.IME_ACTION_DONE) {
                         InputMethodManager imm = (InputMethodManager) finalView.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
                         imm.hideSoftInputFromWindow(holder.planNameEditText.getWindowToken(), 0);
                         return true;
