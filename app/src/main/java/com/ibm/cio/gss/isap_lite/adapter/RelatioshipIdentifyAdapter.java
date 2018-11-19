@@ -48,10 +48,10 @@ public class RelatioshipIdentifyAdapter extends RecyclerView.Adapter<Relatioship
         return new RelatioshipIdentifyAdapter.MyViewHolder(itemView);
     }
     @Override
-    public void onBindViewHolder(final RelatioshipIdentifyAdapter.MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final RelatioshipIdentifyAdapter.MyViewHolder holder,int position) {
       try{
         holder.setIsRecyclable(false);
-        identifyDetailsList = identifyList.get(position);
+        identifyDetailsList = identifyList.get(holder.getAdapterPosition());
         holder.initiativeNameLabel.setText(identifyDetailsList.getNAME());
 
         if(identifyDetailsList.getisSelected()){
