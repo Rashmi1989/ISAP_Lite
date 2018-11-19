@@ -59,13 +59,13 @@ public class SelectedStrategicImperativesListAdapter extends RecyclerView.Adapte
         return new MyViewHolder(itemView);
     }
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder, int position) {
         try {
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             params.setMarginEnd(20);
             holder.itemView.setLayoutParams(params);
             holder.setIsRecyclable(false);
-            strategicimperativesDetailList = strategicimperativesList.get(position);
+            strategicimperativesDetailList = strategicimperativesList.get(holder.getAdapterPosition());
             holder.initiativeNameLabel.setText(strategicimperativesDetailList.getNAME());
             holder.deleteButtonView.setOnClickListener(new View.OnClickListener() {
                 @Override
