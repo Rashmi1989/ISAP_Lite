@@ -48,10 +48,10 @@ public class MarketAdapter extends RecyclerView.Adapter<MarketAdapter.MyViewHold
         return new MarketAdapter.MyViewHolder(itemView);
     }
     @Override
-    public void onBindViewHolder(final MarketAdapter.MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MarketAdapter.MyViewHolder holder,int position) {
         try{
         holder.setIsRecyclable(false);
-        marketData = marketList.get(position);
+        marketData = marketList.get(holder.getAdapterPosition());
         holder.initiativeNameLabel.setText(marketData.getNAME());
 //        if(geoList.getisSelected()){
 //            holder.addGoalCheckBox.setChecked(true);
