@@ -61,10 +61,11 @@ public class InitiativeBrandUnitAdapter extends RecyclerView.Adapter<InitiativeB
 
 
     @Override
-    public void onBindViewHolder(final InitiativeBrandUnitAdapter.MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final InitiativeBrandUnitAdapter.MyViewHolder holder,int position) {
       try{
         holder.setIsRecyclable(true);
-        brandData=brandList.get(position);
+        int rowIndex = position;  
+        brandData=brandList.get(rowIndex);
         if(brandData.isSection())
         holder.relevantBUTitle.setText(brandData.getBRAND_GROUP());
         else{
@@ -76,7 +77,7 @@ public class InitiativeBrandUnitAdapter extends RecyclerView.Adapter<InitiativeB
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
                 holder.relevantBuValueEditText.setText(s.toString());
-                brandList.get(position).setPCT(s.toString());
+                brandList.get(rowIndex).setPCT(s.toString());
             }
             @Override
             public void beforeTextChanged(CharSequence s, int start,
