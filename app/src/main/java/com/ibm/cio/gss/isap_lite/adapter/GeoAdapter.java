@@ -47,7 +47,7 @@ public class GeoAdapter extends RecyclerView.Adapter<GeoAdapter.MyViewHolder> {
         return new GeoAdapter.MyViewHolder(itemView);
     }
     @Override
-    public void onBindViewHolder(final GeoAdapter.MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final GeoAdapter.MyViewHolder holder, int position) {
         holder.setIsRecyclable(false);
         try{
         geoData = geoList.get(position);
