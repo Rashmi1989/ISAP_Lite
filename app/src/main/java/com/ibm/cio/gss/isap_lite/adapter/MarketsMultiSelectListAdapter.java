@@ -73,10 +73,11 @@ public class MarketsMultiSelectListAdapter extends RecyclerView.Adapter<MarketsM
     }
 
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder,int position) {
         try{
         holder.setIsRecyclable(false);
-        marketDetailsList = marketsList.get(position);
+        int rowIndex = position;
+        marketDetailsList = marketsList.get(rowIndex);
         holder.initiativeNameLabel.setText(marketDetailsList.getNAME());
         if(marketDetailsList.getisSelected()){
             holder.addGoalCheckBox.setChecked(true);
@@ -93,7 +94,7 @@ public class MarketsMultiSelectListAdapter extends RecyclerView.Adapter<MarketsM
         });*/
             boolean isFirst=getStatusOfBooleanArray();
             if(isFirst){
-                boolean isChecked=listCheckbox[position];
+                boolean isChecked=listCheckbox[rowIndex];
                 if(isChecked){
                     holder.addGoalCheckBox.setChecked(true);
                 }else {
@@ -105,7 +106,7 @@ public class MarketsMultiSelectListAdapter extends RecyclerView.Adapter<MarketsM
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                     if (isChecked) {
-                        if (position == 0) {
+                        if (rowIndex == 0) {
                             for (int i = 0; i < listCheckbox.length; i++) {
                                 if (i == 0) {
                                     listCheckbox[0] = true;
@@ -122,8 +123,8 @@ public class MarketsMultiSelectListAdapter extends RecyclerView.Adapter<MarketsM
                                     listCheckbox[0] = false;
                                     choiceMap.put(0, false);
                                 } else {
-                                    listCheckbox[position] = true;
-                                    choiceMap.put(position, true);
+                                    listCheckbox[rowIndex] = true;
+                                    choiceMap.put(rowIndex, true);
                                 }
                             }
                         }
