@@ -49,7 +49,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
         return new CountryAdapter.MyViewHolder(itemView);
     }
     @Override
-    public void onBindViewHolder(final CountryAdapter.MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final CountryAdapter.MyViewHolder holder, int position) {
         try{
         holder.setIsRecyclable(false);
         countryData = countryList.get(position);
