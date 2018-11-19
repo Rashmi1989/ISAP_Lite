@@ -397,7 +397,7 @@ public class RelationshipAdapter extends RecyclerView.Adapter<RelationshipAdapte
 
     @Override
 
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder,int position) {
 
         try {
 
