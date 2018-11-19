@@ -81,11 +81,12 @@ public class GeoMultiSelectListAdapter extends RecyclerView.Adapter<GeoMultiSele
 
 
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder,int position) {
 
 
         try {
             holder.setIsRecyclable(false);
+            int rowPosition = position;
             geoDetailsList = geoList.get(position);
             holder.initiativeNameLabel.setText(geoDetailsList.getNAME());
             if (geoDetailsList.getisSelected()) {
@@ -104,7 +105,7 @@ public class GeoMultiSelectListAdapter extends RecyclerView.Adapter<GeoMultiSele
 
             boolean isFirst=getStatusOfBooleanArray();
             if(isFirst){
-                boolean isChecked=listCheckbox[position];
+                boolean isChecked=listCheckbox[rowPosition];
                 if(isChecked){
                     holder.addGoalCheckBox.setChecked(true);
                 }else {
@@ -117,7 +118,7 @@ public class GeoMultiSelectListAdapter extends RecyclerView.Adapter<GeoMultiSele
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                     if (isChecked) {
-                        if (position == 0) {
+                        if (rowPosition == 0) {
                             NewInitiativeActivity.isAllGeos=true;
                             for (int i = 0; i < listCheckbox.length; i++) {
                                 if (i == 0) {
@@ -135,8 +136,8 @@ public class GeoMultiSelectListAdapter extends RecyclerView.Adapter<GeoMultiSele
                                     listCheckbox[0] = false;
                                     choiceMap.put(0, false);
                                 } else {
-                                    listCheckbox[position] = true;
-                                    choiceMap.put(position, true);
+                                    listCheckbox[rowPosition] = true;
+                                    choiceMap.put(rowPosition, true);
                                 }
                             }
                         }
