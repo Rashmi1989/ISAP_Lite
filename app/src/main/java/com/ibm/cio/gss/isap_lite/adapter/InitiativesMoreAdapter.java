@@ -183,10 +183,10 @@ public class InitiativesMoreAdapter extends RecyclerView.Adapter<InitiativesMore
         }
     }
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder,int position) {
     try{
         holder.setIsRecyclable(true);
-        initiativesDetailList = initiativesList.get(position);
+        initiativesDetailList = initiativesList.get(holder.getAdapterPosition());
         holder.initiativeNameLabel.setText(initiativesDetailList.getINITIATIVE_KEY_NM());
         if((initiativesDetailList.getGOALS()!=null) && initiativesDetailList.getGOALS().length > 0){
             holder.goalListLabel.setText((CharSequence) initiativesDetailList.getGOALS()[0].getVALUE());
