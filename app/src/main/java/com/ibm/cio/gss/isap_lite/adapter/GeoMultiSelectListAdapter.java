@@ -86,7 +86,7 @@ public class GeoMultiSelectListAdapter extends RecyclerView.Adapter<GeoMultiSele
 
         try {
             holder.setIsRecyclable(false);
-            int rowPosition = position;
+            final int rowPosition = position;
             geoDetailsList = geoList.get(position);
             holder.initiativeNameLabel.setText(geoDetailsList.getNAME());
             if (geoDetailsList.getisSelected()) {
