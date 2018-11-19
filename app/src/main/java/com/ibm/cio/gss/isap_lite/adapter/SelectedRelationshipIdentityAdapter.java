@@ -51,11 +51,11 @@ public class SelectedRelationshipIdentityAdapter extends RecyclerView.Adapter<Se
     }
 
     @Override
-    public void onBindViewHolder(final SelectedRelationshipIdentityAdapter.MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final SelectedRelationshipIdentityAdapter.MyViewHolder holder,int position) {
       try{
         holder.setIsRecyclable(false);
        // holder.deleteButtonView.setVisibility(View.GONE);
-        selectedIdentifyDetailsList = selectedIdentifyList.get(position);
+        selectedIdentifyDetailsList = selectedIdentifyList.get(holder.getAdapterPosition());
         holder.initiativeNameLabel.setText(selectedIdentifyDetailsList.getNAME());
 
         holder.deleteButtonView.setOnClickListener(new View.OnClickListener() {
