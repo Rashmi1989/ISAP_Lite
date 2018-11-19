@@ -56,7 +56,7 @@ public class SelectedInitiativeListAdapter extends RecyclerView.Adapter<Selected
         return new MyViewHolder(itemView);
     }
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder,int position) {
       try{
         holder.setIsRecyclable(false);
         initiativeDetailsList = initiativesList.get(position);
