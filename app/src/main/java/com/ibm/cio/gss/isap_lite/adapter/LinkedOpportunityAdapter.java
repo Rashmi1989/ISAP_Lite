@@ -51,10 +51,10 @@ public class LinkedOpportunityAdapter extends RecyclerView.Adapter<LinkedOpportu
         return new MyViewHolder(itemView);
     }
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder, int position) {
         try{
         holder.setIsRecyclable(false);
-        oppsDetailsList = opptsList.get(position);
+        oppsDetailsList = opptsList.get(holder.getAdapterPosition());
         holder.oppsIdLabel.setText(oppsDetailsList.getOPPORTUNITY_ID());
         holder.oppsNameLabel.setText(oppsDetailsList.getOPPORTUNITY_NM());
         holder.oppsTCVLabel.setText(oppsDetailsList.getOPPTY_VALUE());
