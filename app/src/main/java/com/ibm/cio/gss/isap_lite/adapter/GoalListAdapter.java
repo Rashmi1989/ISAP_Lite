@@ -126,7 +126,7 @@ public class GoalListAdapter extends RecyclerView.Adapter<GoalListAdapter.MyView
         });
     }
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder,int position) {
         try{
         holder.setIsRecyclable(true);
         goalDetailsList = goalsList.get(position);
