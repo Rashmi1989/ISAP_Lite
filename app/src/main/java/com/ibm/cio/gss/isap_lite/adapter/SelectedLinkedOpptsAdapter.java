@@ -44,7 +44,7 @@ public class SelectedLinkedOpptsAdapter extends RecyclerView.Adapter<SelectedLin
         return new MyViewHolder(itemView);
     }
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder,int position) {
         try{
         holder.setIsRecyclable(false);
         linkedOpptsDetailsList = linkedopptList.get(position);
